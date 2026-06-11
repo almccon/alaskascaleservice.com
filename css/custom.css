@@ -68,7 +68,7 @@ hr.divider {
 
 /* ----- Masthead: navy-tinted overlay ----- */
 header.masthead {
-  background: linear-gradient(to bottom, rgba(32, 37, 70, 0.78) 0%, rgba(32, 37, 70, 0.78) 100%), url("../assets/img/cover.jpg");
+  background: linear-gradient(to bottom, rgba(32, 37, 70, 0.45) 0%, rgba(32, 37, 70, 0.45) 100%), url("../assets/img/cover.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
