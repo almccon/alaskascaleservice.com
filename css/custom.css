@@ -1,0 +1,89 @@
+/*
+ * Alaska Scale Service color overrides
+ * Primary accent: #202546 (navy)
+ * Dark sections:  #383838 (dark gray)
+ */
+
+:root {
+  --bs-primary: #202546;
+  --bs-primary-rgb: 32, 37, 70;
+  --bs-orange: #202546;
+  --bs-link-color: #202546;
+  --bs-link-hover-color: #383838;
+}
+
+/* ----- Primary background (About, Quote sections) ----- */
+.bg-primary {
+  background-color: #202546 !important;
+}
+/* Navy is dark enough — white text still works fine */
+
+/* ----- Dark sections (Scale Types) ----- */
+.bg-dark {
+  background-color: #383838 !important;
+}
+
+/* ----- Divider line ----- */
+hr.divider {
+  background-color: #202546;
+}
+
+/* ----- Text primary (icons, inline accents on white bg) ----- */
+.text-primary {
+  color: #202546 !important;
+}
+.link-primary {
+  color: #202546 !important;
+}
+.link-primary:hover,
+.link-primary:focus {
+  color: #383838 !important;
+}
+
+/* ----- Buttons ----- */
+.btn-primary {
+  --bs-btn-bg: #202546;
+  --bs-btn-border-color: #202546;
+  --bs-btn-color: #fff;
+  --bs-btn-hover-bg: #2d3563;
+  --bs-btn-hover-border-color: #2d3563;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-bg: #383838;
+  --bs-btn-active-border-color: #383838;
+  --bs-btn-active-color: #fff;
+  --bs-btn-disabled-bg: #202546;
+  --bs-btn-disabled-border-color: #202546;
+}
+.btn-outline-primary {
+  --bs-btn-color: #202546;
+  --bs-btn-border-color: #202546;
+  --bs-btn-hover-bg: #202546;
+  --bs-btn-hover-border-color: #202546;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-bg: #202546;
+  --bs-btn-active-color: #fff;
+  --bs-btn-disabled-color: #202546;
+  --bs-btn-disabled-border-color: #202546;
+}
+
+/* ----- Masthead: navy-tinted overlay ----- */
+header.masthead {
+  background: linear-gradient(to bottom, rgba(32, 37, 70, 0.78) 0%, rgba(32, 37, 70, 0.78) 100%), url("../assets/img/cordova.jpeg");
+}
+
+/* ----- Navbar ----- */
+/* Scrolled state (white bg): hover/active uses navy */
+#mainNav.navbar-shrink .navbar-brand:hover {
+  color: #202546;
+}
+#mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
+  color: #202546;
+}
+/* Active link — needs !important to beat the source rule */
+#mainNav .navbar-nav .nav-item .nav-link.active {
+  color: #202546 !important;
+}
+/* Transparent (top of page) state: keep white hover, just neutralize active orange */
+#mainNav:not(.navbar-shrink) .navbar-nav .nav-item .nav-link:hover {
+  color: #fff;
+}
